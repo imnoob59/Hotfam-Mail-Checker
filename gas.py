@@ -30,20 +30,22 @@ def clear_screen():
     os.system('clear')
 
 def print_banner(threads_count):
-    """Menampilkan banner program"""
+    """Menampilkan banner program yang dioptimasi untuk Termux"""
     banner = f"""
-{Fore.RED}██╗      ██████╗ ██████╗  ██████╗      █████╗ ████████╗██╗██╗  ██╗██╗   ██╗
-{Fore.RED}██║     ██╔═══██╗██╔══██╗██╔═══██╗    ██╔══██╗╚══██╔══╝██║██║ ██╔╝██║   ██║
-{Fore.RED}██║     ██║   ██║██████╔╝██║   ██║    ███████║   ██║   ██║█████╔╝ ██║   ██║
-{Fore.RED}██║     ██║   ██║██╔══██╗██║   ██║    ██╔══██║   ██║   ██║██╔═██╗ ██║   ██║
-{Fore.RED}███████╗╚██████╔╝██║  ██║╚██████╔╝    ██║  ██║   ██║   ██║██║  ██╗╚██████╔╝
-{Fore.RED}╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝╚═╝  ╚═╝ ╚═════╝ 
-{Fore.GREEN}=========================================================================                                                                 
-{Fore.YELLOW}          [+] JOIN MY NEW CHANNEL: https://t.me/axycloud [+]
-{Fore.GREEN}========================================================================= 
-{Fore.YELLOW}       [!] HOTFAMS ACCOUNTS CHECKER BY MASANTO YANG TERSAKITI [!]
-{Fore.GREEN}========================================================================= 
-{Fore.GREEN}Threads: {threads_count} | Delay: {DELAY_BETWEEN_CHECKS}s | Ctrl+C to Stop
+{Fore.RED}╔════════════════════════════════════════╗
+{Fore.RED}║ ██╗  ██╗ ██████╗ ████████╗███████╗   ║
+{Fore.RED}║ ██║  ██║██╔═══██╗╚══██╔══╝██╔════╝   ║
+{Fore.RED}║ ███████║██║   ██║   ██║   █████╗     ║
+{Fore.RED}║ ██╔══██║██║   ██║   ██║   ██╔══╝     ║
+{Fore.RED}║ ██║  ██║╚██████╔╝   ██║   ███████╗   ║
+{Fore.RED}║ ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝   ║
+{Fore.GREEN}╠════════════════════════════════════════╣
+{Fore.YELLOW}║  [+] JOIN: t.me/axycloud              ║
+{Fore.GREEN}╠════════════════════════════════════════╣
+{Fore.YELLOW}║  [!] HOTFAMS ACCOUNTS CHECKER [!]     ║
+{Fore.GREEN}╠════════════════════════════════════════╣
+{Fore.GREEN}║ Threads: {threads_count:<2} | Delay: {DELAY_BETWEEN_CHECKS}s  ║
+{Fore.RED}╚════════════════════════════════════════╝
 {Fore.RESET}"""
     print(banner)
 
